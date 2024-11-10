@@ -1,0 +1,99 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+    background-color: rgb(226, 111, 111);
+    color: rgb(8, 8, 8);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    width: 1000px fit-content; /* Added px */
+
+    &:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        background-color: rgb(236, 184, 184);
+        transition: box-shadow 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
+}
+
+.resume-form {
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section {
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Added px */
+}
+
+legend {
+    margin: 10px 0;
+    font-size: larger;
+}
+
+label {
+    margin: 5px;
+}
+
+input {
+    margin: 5px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 3px;
+    padding: 5px;
+    color: beige;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+        background-color: rgb(18, 18, 18);
+    }
+
+    #download-resume {
+        background-color: rgb(34, 34, 39);
+        padding: 15px;
+        border-radius: 5px;
+        font: 1em sans-serif;
+        outline: none;
+        color: rgb(167, 73, 73);
+    }
+}
+
+#generate-resume {
+    width: 320px; /* Added px */
+    background-color: rgba(241, 172, 221, 0.212);
+    padding: 15px;
+    border-radius: 5px;
+    font: 1em sans-serif;
+    outline: none;
+    color: rgb(5, 5, 5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: rgb(146, 60, 60);
+    }
+    outline: auto;
+    transition: background-color 0.3s ease-in-out;
+
+    #generate-resume:disabled {
+        background-color: rgba(241, 172, 221, 0.5);
+        cursor: not-allowed;
+    }
+    text-decoration-color: rgb(204, 128, 14);
+}
